@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+}
+
+.thanks h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.type {
+    font-size: 30px;
+}
+
+.typeLabe {
+    margin-right: 10px;
+}
+
+img {
+        max-width: 45%;
+      }

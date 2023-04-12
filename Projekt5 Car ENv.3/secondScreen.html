@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Druga strona</title>
+    <link rel="stylesheet" href="./css/secondScreen.css">
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/6c08a4b231.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper2">
+      <div class="btn">
+        <form>
+          <input type="radio" id="bitcoinInput" name="yesOrNo" value="not_visible" >
+            <label for="bitcoinInput">BTC Cryptocurrency</label>
+            <br>
+            <input type="radio" id="bitcoinInput" name="yesOrNo" value="not_visible" >
+            <label for="bitcoinInput">ETH Cryptocurrency</label>
+            <br>
+            <input type="radio" id="noInput" name="yesOrNo" value="not_visible">
+            <label for="not_visible">USD Cash </label>
+            <br>
+            <input type="radio" id="yesInput" name="yesOrNo" value="yes" checked>
+            <label for="yesInput">Lease</label>
+          </form>
+        </div>
+
+        <div class="type">
+          <div>
+            <i class="modelTypeLabel"></i>MODEL&PRICE <span id="modelType"></span></div>
+          <div class="modelTypeValue"></div>
+          <div> 
+            <i class="fa-sharp fa-solid fa-dollar-sign"></i> <span id="price"></span></div>
+            <div>
+            <i class="fa-brands fa-bitcoin"></i> <span id="btcPrice"></span>
+          </div>
+          <div id="result">
+          </div>
+          <div>
+            <i class="fa-brands fa-ethereum"></i> <span id="ethPrice"></span>
+          </div>
+          <div id="result2">
+          </div>
+        </div>
+        
+        
+        <div id="warning">WARNING!!!</div>
+
+      <form>
+        <fieldset>
+          <label>
+            First Name Last Name:
+            <input type="text" id="nameInput" placeholder="Enter your first and last name">
+          </label>
+          <label>
+            Pick-up Location:
+            <input type="text" id="CityInput" placeholder="City">
+          </label>
+          <label>
+            Pick-up Date:
+            <input type="date" id="dateInput" placeholder="Input 3">
+          </label>
+        </fieldset>
+      </form>
+
+      <p id="login_error" class="not_visible">Incorrect data</p>
+      
+      <div class="accessories">
+        <h2>Accessories</h2>
+        <div>
+          Winter tires
+          2500USD
+          <button id="addWinterTiresBtn">+</button>
+          <button id="removeWinterTiresBtn">-</button>
+        </div>
+        <br><br>
+
+        <div>
+          Year of warranty
+          5000USD
+          <button id="addYearOfWarrantyBtn">+</button>
+          <button id="removeYearOfWarrantyBtn">-</button>
+        </div>
+        <br><br>
+        <div>
+          Service voucher
+          1500USD
+          <button id="addServiceVoucherBtn">+</button>
+          <button id="removeServiceVoucherBtn">-</button>
+        </div>
+      </div>
+    
+      <div class="container">
+        <form action="./index.html">
+          <input type="submit" value="<<< BACK">
+        </form>
+      </div>
+    
+      <div class="container2">
+        <form action="./lastPage.html" onsubmit="return validateForm()">
+          <button type="submit" onclick="clearLocalStorage()">BUY >>></button>
+        </form>
+        <div class="errorMessage"></div>
+      </div>
+    
+    </div>
+ 
+ 
+    <script src="./crypto.js"></script>
+    <script src="./result.js"></script>
+
+  </body>
+</html>
